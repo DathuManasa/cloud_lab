@@ -8,6 +8,6 @@ app = Flask(__name__)
 def hello():
     return "hello from flask!"
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     port = int(os.environ.get("PORT", 5000))  # default to 5000 if PORT is not set
     app.run(host="0.0.0.0", port=port)
